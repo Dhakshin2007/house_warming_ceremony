@@ -36,7 +36,7 @@ const App: React.FC = () => {
 };
 
 const Header: React.FC = () => (
-  <header className="py-12 text-center text-amber-100 bg-cover bg-center" style={{backgroundImage: `linear-gradient(rgba(78, 52, 46, 0.8), rgba(78, 52, 46, 0.8)), url('https://i.postimg.cc/CxH97dqW/Whats-App-Image-2025-10-02-at-19-34-08-977bb1d6.jpg')`}}>
+  <header className="py-12 text-center bg-maroon-dark text-amber-100 bg-cover bg-center" style={{backgroundImage: `url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png')`}}>
      <Section>
         <p className="text-xl md:text-2xl text-amber-300">Join us for the</p>
         <h1 className="font-display text-6xl md:text-8xl my-4 text-amber-200">Housewarming Ceremony - Kotha's'  Family</h1>

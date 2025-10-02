@@ -3,7 +3,6 @@ import LandingAnimation from './components/LandingAnimation';
 import FloatingPetals from './components/FloatingPetals';
 import Section from './components/Section';
 import { CalendarIcon, ClockIcon, MapPinIcon, MailIcon, PhoneIcon } from './components/Icons';
-import FamilyEnteringHouseAnimation from './components/FamilyEnteringHouseAnimation';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -27,8 +26,8 @@ const App: React.FC = () => {
         <Header />
         <InvitationSection />
         <EventDetailsSection />
-        <FamilySection />
         <BlessingsSection />
+        <RSVPSection />
         <Footer />
       </main>
     </div>
@@ -36,7 +35,7 @@ const App: React.FC = () => {
 };
 
 const Header: React.FC = () => (
-  <header className="py-12 text-center text-amber-100 bg-cover bg-center" style={{backgroundImage: `linear-gradient(rgba(78, 52, 46, 0.8), rgba(78, 52, 46, 0.8)), url('https://i.postimg.cc/CxH97dqW/Whats-App-Image-2025-10-02-at-19-34-08-977bb1d6.jpg')`}}>
+  <header className="py-12 text-center bg-maroon-dark text-amber-100 bg-cover bg-center" style={{backgroundImage: `url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png')`}}>
      <Section>
         <p className="text-xl md:text-2xl text-amber-300">Join us for the</p>
         <h1 className="font-display text-6xl md:text-8xl my-4 text-amber-200">Housewarming Ceremony - Kotha's'  Family</h1>
@@ -81,16 +80,6 @@ const EventDetailsSection: React.FC = () => (
     </Section>
 );
 
-const FamilySection: React.FC = () => (
-    <Section className="py-16 px-6 text-center max-w-4xl mx-auto">
-         <h2 className="font-display text-5xl text-red-900 mb-8">A Place to Call Home</h2>
-         <p className="text-xl text-stone-700 mb-12">
-            Our journey has led us to a new door, and we can't wait to fill our home with love, laughter, and cherished memories with all of you.
-         </p>
-         <FamilyEnteringHouseAnimation />
-    </Section>
-);
-
 const BlessingsSection: React.FC = () => (
     <Section className="py-16 px-6 text-center max-w-4xl mx-auto">
          <h2 className="font-display text-5xl text-red-900 mb-8">Blessings</h2>
@@ -102,6 +91,93 @@ const BlessingsSection: React.FC = () => (
         </blockquote>
     </Section>
 );
+
+const RSVPSection: React.FC = () => {
+    const [submitted, setSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [error, setError] = useState<string | null>(null);
+
+    // IMPORTANT: Replace this with your own Formspree endpoint URL.
+    // Go to formspree.io, create a new form, and paste the endpoint here.
+    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xblzyrkd';
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setError(null);
+
+        const formData = new FormData(e.currentTarget);
+
+        try {
+            const response = await fetch(FORMSPREE_ENDPOINT, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+            } else {
+                const data = await response.json();
+                // FIX: Replace Object.hasOwn with a more compatible check for wider browser support.
+                if (Object.prototype.hasOwnProperty.call(data, 'errors')) {
+                    setError(data["errors"].map((error: { message: string }) => error.message).join(", "));
+                } else {
+                    setError('Oops! There was a problem submitting your form.');
+                }
+            }
+        } catch (err) {
+            setError('An unexpected error occurred. Please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    return (
+        <Section className="py-16 px-6 bg-red-900/5">
+            <div className="max-w-2xl mx-auto text-center">
+                <h2 className="font-display text-5xl text-red-900 mb-8">RSVP</h2>
+                {submitted ? (
+                    <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4" role="alert">
+                        <p className="font-bold">Thank you!</p>
+                        <p>Your response has been recorded. We look forward to seeing you!</p>
+                    </div>
+                ) : (
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        <div>
+                            <label htmlFor="name" className="block text-left text-lg font-medium text-stone-700 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" required className="w-full p-3 bg-white border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"/>
+                        </div>
+                        <div>
+                           <label className="block text-left text-lg font-medium text-stone-700 mb-2">Will you be attending?</label>
+                           <div className="flex justify-center gap-6">
+                               <label className="flex items-center space-x-2 text-lg">
+                                   <input type="radio" name="attending" value="Yes" required className="w-5 h-5 text-amber-600 focus:ring-amber-500"/>
+                                   <span>Yes, with pleasure!</span>
+                               </label>
+                               <label className="flex items-center space-x-2 text-lg">
+                                   <input type="radio" name="attending" value="No" className="w-5 h-5 text-amber-600 focus:ring-amber-500"/>
+                                   <span>Sorry, can't make it.</span>
+                               </label>
+                           </div>
+                        </div>
+                        {error && (
+                            <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mt-4" role="alert">
+                                <p>{error}</p>
+                            </div>
+                        )}
+                        <button type="submit" disabled={isSubmitting} className="w-full md:w-auto px-10 py-3 bg-amber-600 text-white text-lg font-bold rounded-full hover:bg-amber-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-amber-400/50 disabled:bg-gray-400 disabled:scale-100 disabled:cursor-not-allowed">
+                            {isSubmitting ? 'Sending...' : 'Send Response'}
+                        </button>
+                    </form>
+                )}
+            </div>
+        </Section>
+    );
+};
+
 
 const Footer: React.FC = () => (
     <footer className="py-12 px-6 text-center bg-[#4E342E] text-amber-100">
