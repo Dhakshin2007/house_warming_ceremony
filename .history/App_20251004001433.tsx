@@ -168,7 +168,7 @@ const Footer: React.FC = () => (
             <div className="flex justify-center items-center space-x-6">
                 <a href="tel:+917702632608" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <PhoneIcon className="w-6 h-6" />
-                    <span>7702632608</span>
+                    <span>Call (7702632608) 📞</span>
                 </a>
                 <a href="mailto:nitinbhargav2002@gmail.com" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <MailIcon className="w-6 h-6" />
@@ -176,7 +176,7 @@ const Footer: React.FC = () => (
                 </a>
             </div>
             {/* <p className="mt-8 text-amber-300/70">Crafted with love for our new beginning.</p> */}
-            <p className="mt-4 text-sm text-amber-400/70">
+            <p className="mt-4 text-sm text-amber-300/70">
                 With Best Wishes
             </p>
             <p className="mt-4 text-sm text-amber-300/70">

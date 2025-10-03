@@ -98,12 +98,12 @@ const EventDetailsSection: React.FC = () => (
                     <div className="flex flex-col items-center p-6 bg-white/50 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <ClockIcon className="w-12 h-12 text-amber-600 mb-3" />
                         <h4 className="text-2xl font-bold mb-1">Time</h4>
-                        <p className="text-lg">08:42PM onwards</p>
+                        <p className="text-lg">08:42P onwards</p>
                     </div>
                     <div className="flex flex-col items-center p-6 bg-white/50 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <MapPinIcon className="w-12 h-12 text-amber-600 mb-3" />
                         <h4 className="text-2xl font-bold mb-1">Venue</h4>
-                        <p className="text-lg">301 , Sai Krishna Homes , Near Sai Baba Temple , Venkateswara Colony , Beside Lane of Decathlon Showroom , Gorantla , Guntur</p>
+                        <p className="text-lg">Sai Krishna Home , Near Gorantla-Kakani Road , Gorantla , Guntur</p>
                         <a href="https://maps.app.goo.gl/Uvsg3AJyijVXM1be9" target="_blank" rel="noopener noreferrer" className="text-amber-700 hover:text-amber-800 transition-colors mt-2 underline">View on Map</a>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ const Footer: React.FC = () => (
             <div className="flex justify-center items-center space-x-6">
                 <a href="tel:+917702632608" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <PhoneIcon className="w-6 h-6" />
-                    <span>7702632608</span>
+                    <span>Call 📞</span>
                 </a>
                 <a href="mailto:nitinbhargav2002@gmail.com" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <MailIcon className="w-6 h-6" />
@@ -176,11 +176,8 @@ const Footer: React.FC = () => (
                 </a>
             </div>
             {/* <p className="mt-8 text-amber-300/70">Crafted with love for our new beginning.</p> */}
-            <p className="mt-4 text-sm text-amber-400/70">
-                With Best Wishes
-            </p>
             <p className="mt-4 text-sm text-amber-300/70">
-                Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉 ( Click Me !! )</a>
+                With Best Wishes Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉 ( Click Me !! )</a>
             </p>
         </Section>
     </footer>

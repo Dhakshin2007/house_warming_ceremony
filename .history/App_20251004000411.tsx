@@ -50,26 +50,26 @@ const InvitationSection: React.FC = () => (
         <h2 className="font-display text-5xl text-red-900 mb-6">With hearts full of joy...</h2>
         <p className="font-telugu text-xl md:text-2xl leading-loose text-stone-700">
             మేము, <span className="font-bold text-red-800">కొత్త రామమోహన్ & భవాని </span> మరియు మా ప్రియమైన కుమారుడు <span className="font-bold text-red-800">కొత్త నితిన్ భార్గవ్ </span>
-            తో కలిసి ఆనందం మరియు ఆశలు, ఆకాంక్షలతో నిండిన మా నూతన గృహంలోకి అడుగు పెడుతున్నాము. ఈ మధురక్షణాన్ని, ప్రేమ, నవ్వులు, ఆప్యాయతలు, మీ అమూల్యమైన ఆశీస్సులతో మరింత శోభయమానంగా మార్చుకోవాలని మనస్ఫూర్తిగా కోరుతున్నాము. మీ రాక మాకు అపార ఆనందాన్ని అందిస్తూ చిరస్మరణీయంగా నిలుపుతుంది. 
+            కలిసి ఆనందం మరియు ఆశలు, ఆకాంక్షలతో నిండిన మా నూతన గృహంలోకి అడుగు పెడుతున్నాము. ఈ మధురక్షణాన్ని, ప్రేమ, నవ్వులు, ఆప్యాయతలు, మీ అమూల్యమైన ఆశీస్సులతో మరింత శోభయమానంగా మార్చుకోవాలని మనస్ఫూర్తిగా కోరుతున్నాము. మీ రాక మాకు అపార ఆనందాన్ని అందిస్తూ చిరస్మరణీయంగా నిలుపుతుంది. 
         </p>
 
 
         <p className="font-telugu text-xl md:text-2xl leading-loose text-stone-700 mt-6">
             ఈ <span className="font-bold text-red-800">గృహప్రవేశ కార్యక్రమం</span> 
-            <span className="font-bold text-red-800"> 11-10-2025 (11th October), శనివారం</span>, ఆశ్వయుజ బహుళ పంచమి,
+            <span className="font-bold text-red-800"> 11-10-2025 (11th October), శనివారం</span>, ఆశ్విజ బహుళ పంచమి, 
             <span className="font-bold text-red-800"> రోహిణి నక్షత్రం</span>, 
-            <span className="font-bold text-red-800"> వృషభ లగ్నం </span>లో, 
+            <span className="font-bold text-red-800"> వృషభ లగ్నం</span>లో, 
             <span className="font-bold text-red-800"> పుష్కరాంశ </span> యందు, 
-            <span className="font-bold text-red-800"> రాత్రి 8:42 గంటలకు</span> నుండి జరుగును..
+            <span className="font-bold text-red-800"> రాత్రి 8:42 గంటలకు</span> జరుగనున్నది.
         <p className="font-telugu text-xl md:text-2xl leading-loose text-stone-700 mt-6">
-            <span className="font-bold text-red-800">12-10-2025 (12th October), ఆదివారము,</span> ఉదయం 9:00 గంటలకు 
+            <span className="font-bold text-red-800">12-10-2025 (12th October), ఆదివారం</span> ఉదయం 9:00 గంటలకు 
             <span className="font-bold text-red-800"> శ్రీ సత్యనారాయణ స్వామి వారి వ్రతము</span> తదుపరి.  
-             <span className="font-bold text-red-800">మధ్యాహ్నం 12:00 గంటలనుండి </span> విందు ఏర్పాటు చేయుటమయినది.
+             <span className="font-bold text-red-800">మధ్యాహ్నం 12:00 గంటలనుండి </span> విందు ఏర్పాటు చేయటమైనది .
         
         </p>
 
         <p>
-            మీరు తప్పక విచ్చేసి మీ అభినందనలు, ఆశీస్సులు అందచేయవలసిందిగా కోరుతున్నాము</p>
+            మీ రాక మాకు అపార ఆనందాన్ని అందించడమే కాక, చిరస్మరణీయంగా మలుస్తుంది.మా హృదయాలకు సంతోషాన్ని కలిగిస్తాయి.</p>
 
 
             {/* <br /><br />
@@ -98,12 +98,12 @@ const EventDetailsSection: React.FC = () => (
                     <div className="flex flex-col items-center p-6 bg-white/50 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <ClockIcon className="w-12 h-12 text-amber-600 mb-3" />
                         <h4 className="text-2xl font-bold mb-1">Time</h4>
-                        <p className="text-lg">08:42PM onwards</p>
+                        <p className="text-lg">11:00 AM onwards</p>
                     </div>
                     <div className="flex flex-col items-center p-6 bg-white/50 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <MapPinIcon className="w-12 h-12 text-amber-600 mb-3" />
                         <h4 className="text-2xl font-bold mb-1">Venue</h4>
-                        <p className="text-lg">301 , Sai Krishna Homes , Near Sai Baba Temple , Venkateswara Colony , Beside Lane of Decathlon Showroom , Gorantla , Guntur</p>
+                        <p className="text-lg">Sai Krishna Home , Near Gorantla-Kakani Road , Gorantla , Guntur</p>
                         <a href="https://maps.app.goo.gl/Uvsg3AJyijVXM1be9" target="_blank" rel="noopener noreferrer" className="text-amber-700 hover:text-amber-800 transition-colors mt-2 underline">View on Map</a>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ const Footer: React.FC = () => (
             <div className="flex justify-center items-center space-x-6">
                 <a href="tel:+917702632608" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <PhoneIcon className="w-6 h-6" />
-                    <span>7702632608</span>
+                    <span>Call 📞</span>
                 </a>
                 <a href="mailto:nitinbhargav2002@gmail.com" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <MailIcon className="w-6 h-6" />
@@ -176,11 +176,8 @@ const Footer: React.FC = () => (
                 </a>
             </div>
             {/* <p className="mt-8 text-amber-300/70">Crafted with love for our new beginning.</p> */}
-            <p className="mt-4 text-sm text-amber-400/70">
-                With Best Wishes
-            </p>
             <p className="mt-4 text-sm text-amber-300/70">
-                Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉 ( Click Me !! )</a>
+                With Best Wishes Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉 ( Click Me !! )</a>
             </p>
         </Section>
     </footer>
