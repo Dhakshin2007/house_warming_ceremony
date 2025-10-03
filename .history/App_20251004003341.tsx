@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <BlessingsSection />
         <Footer />
       </main>
-      <EcoFriendlyLogo/>
+      <EcoFriendlyLogo
     </div>
   );
 };
