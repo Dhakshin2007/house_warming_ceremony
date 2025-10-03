@@ -131,19 +131,9 @@ const EventDetailsSection: React.FC = () => (
                         <h4 className="text-2xl font-bold mb-1">Lunch</h4>
                         <p className="text-lg">12:00 PM onwards</p>
                     </div>
-                </div>
-                <p className="text-lg mt-8 text-stone-700">
-                    The lunch will be served at our  New Home. 
-                    <a
-                        href="https://maps.app.goo.gl/Uvsg3AJyijVXM1be9"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-amber-700 hover:text-amber-800 underline ml-1"
-                    >
-                       (View Map📍)
-                    </a>.
-                </p>
-            </div>
+                {/* </div>
+                 <p className="text-lg mt-8 text-stone-700">The Vratham will be followed by lunch at our new home.</p>
+            </div> */}
         </div>
     </Section>
 );

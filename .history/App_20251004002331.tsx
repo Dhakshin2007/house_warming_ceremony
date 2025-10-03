@@ -140,7 +140,7 @@ const EventDetailsSection: React.FC = () => (
                         rel="noopener noreferrer"
                         className="text-amber-700 hover:text-amber-800 underline ml-1"
                     >
-                       (View Map📍)
+                       (View Map)
                     </a>.
                 </p>
             </div>

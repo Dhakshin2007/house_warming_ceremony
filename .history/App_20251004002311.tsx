@@ -133,14 +133,14 @@ const EventDetailsSection: React.FC = () => (
                     </div>
                 </div>
                 <p className="text-lg mt-8 text-stone-700">
-                    The lunch will be served at our  New Home. 
+                    The lunch will be served at our 
                     <a
                         href="https://maps.app.goo.gl/Uvsg3AJyijVXM1be9"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-amber-700 hover:text-amber-800 underline ml-1"
                     >
-                       (View Map📍)
+                        New Home. 📍(View Map)
                     </a>.
                 </p>
             </div>
