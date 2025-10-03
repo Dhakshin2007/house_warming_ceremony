@@ -55,7 +55,7 @@ const InvitationSection: React.FC = () => (
 
         <p className="font-telugu text-xl md:text-2xl leading-loose text-stone-700 mt-6">
             ఈ <span className="font-bold text-red-800">గృహప్రవేశ మహోత్సవం</span> 
-            <span className="font-bold text-red-800"> 11-10-2025 (11th October), శనివారం</span>, ఆశ్విజ బహుళ పంచమి, 
+            <span className="font-bold text-red-800"> 11-10-2025 ( 11th October), శనివారం</span>, ఆశ్విజ బహుళ పంచమి, 
             <span className="font-bold text-red-800"> రోహిణి నక్షత్రం</span>, 
             <span className="font-bold text-red-800"> వృషభ లగ్నం</span>లో, 
             <span className="font-bold text-red-800"> పుష్కర్మాస</span> యందు, 
@@ -123,16 +123,16 @@ const Footer: React.FC = () => (
             <div className="flex justify-center items-center space-x-6">
                 <a href="tel:+917702632608" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <PhoneIcon className="w-6 h-6" />
-                    <span>Call 📞</span>
+                    <span>+91 77026 32608</span>
                 </a>
                 <a href="mailto:nitinbhargav2002@gmail.com" className="flex items-center space-x-2 hover:text-amber-300 transition-colors">
                     <MailIcon className="w-6 h-6" />
-                    <span>Mail 📧</span>
+                    <span>nitinbhargav2002@gmail.com</span>
                 </a>
             </div>
-            {/* <p className="mt-8 text-amber-300/70">Crafted with love for our new beginning.</p> */}
+            <p className="mt-8 text-amber-300/70">Crafted with love for our new beginning.</p>
             <p className="mt-4 text-sm text-amber-300/70">
-                Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉 ( Click Me !! )</a>
+                Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha</a>
             </p>
         </Section>
     </footer>

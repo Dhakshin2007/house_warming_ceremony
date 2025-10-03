@@ -132,7 +132,7 @@ const Footer: React.FC = () => (
             </div>
             {/* <p className="mt-8 text-amber-300/70">Crafted with love for our new beginning.</p> */}
             <p className="mt-4 text-sm text-amber-300/70">
-                Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉 ( Click Me !! )</a>
+                Crafted by <a href="https://dhakshin-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-200 transition-colors">Dhakshin Kotha 😉</a>
             </p>
         </Section>
     </footer>
