@@ -41,7 +41,7 @@ const Header: React.FC = () => (
   <header className="py-20 md:py-28 text-center text-amber-100 bg-cover bg-center" style={{backgroundImage: `linear-gradient(rgba(78, 52, 46, 0.8), rgba(78, 52, 46, 0.8)), url('https://i.postimg.cc/CxH97dqW/Whats-App-Image-2025-10-02-at-19-34-08-977bb1d6.jpg')`}}>
      <Section>
         <p className="text-xl md:text-2xl text-amber-300">Join us for the</p>
-        <h1 className="font-display text-6xl md:text-8xl my-4 text-amber-200">Housewarming Ceremony - Kotha's Family</h1>
+        <h1 className="font-display text-6xl md:text-8xl my-4 text-amber-200">Housewarming Ceremony - Kotha's'  Family</h1>
         <p className="text-xl md:text-2xl text-amber-300">of our new home</p>
      </Section>
   </header>
@@ -70,16 +70,15 @@ const InvitationSection: React.FC = () => (
         
         </p>
 
-        </p>
-        <p className="font-telugu text-xl md:text-2xl leading-loose text-stone-700 mt-6">
-            మీరు తప్పక విచ్చేసి మీ అభినందనలు, ఆశీస్సులు అందచేయవలసిందిగా కోరుతున్నాము
-        </p>
+        <p>
+            మీరు తప్పక విచ్చేసి మీ అభినందనలు, ఆశీస్సులు అందచేయవలసిందిగా కోరుతున్నాము</p>
 
 
             {/* <br /><br />
             మీ ఆశీర్వాదాలు, అభినందనలు మా గృహానికి <span className="font-bold text-red-800">శుభవైభవాన్ని</span>, 
             మా హృదయాలకు <span className="font-bold text-red-800">ఆనందాన్ని</span> అందించి,  */}
             {/* ఈ ప్రత్యేక దినాన్ని <span className="font-bold text-red-800">చిరస్మరణీయంగా</span> చేస్తుంది. */}
+        </p>
     </Section>
 );
 
